@@ -5,14 +5,16 @@ then
 fi
 echo "set rights"
 chmod a+w data/database
-echo "doctrine:build-model"
-php symfony doctrine:build-model
-echo "doctrine:build-sql"
-php symfony doctrine:build-sql
-echo "doctrine:insert-sql"
-php symfony doctrine:insert-sql
-echo "doctrine:data-load"
-php symfony doctrine:data-load
+echo "php symfony doctrine:build --all --and-load"
+php symfony doctrine:build --all --and-load --no-confirmation
+#echo "doctrine:build-model"
+#php symfony doctrine:build-model
+#echo "doctrine:build-sql"
+#php symfony doctrine:build-sql
+#echo "doctrine:insert-sql"
+#php symfony doctrine:insert-sql
+#echo "doctrine:data-load"
+#php symfony doctrine:data-load
 echo "clear-cache"
 php symfony cc
 chmod a+w data/database/webschachdb.db

@@ -2,5 +2,12 @@
 log
 cache
 data/database
+lib/filter/doctrine/base/
+lib/filter/doctrine/sfDoctrineGuardPlugin/base/
+lib/filter/doctrine/sfForkedDoctrineApplyPlugin/base/
+lib/form/doctrine/base/
+lib/form/doctrine/sfDoctrineGuardPlugin/base/
+lib/form/doctrine/sfForkedDoctrineApplyPlugin/base/
 lib/model/doctrine/base/
 lib/model/doctrine/sfDoctrineGuardPlugin/base/
+lib/model/doctrine/sfForkedDoctrineApplyPlugin/base/
