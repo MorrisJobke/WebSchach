@@ -36,9 +36,10 @@ all:
     
     # Enable modules
     enabled_modules:        [default, sfGuardAuth]
-    .actions:
-      login_module:         sfGuardAuth
-      login_action:         signin
+    
+  .actions:
+    login_module:         sfGuardAuth
+    login_action:         signin
 
-      secure_module:        sfGuardAuth
-      secure_action:        secure
+    secure_module:        sfGuardAuth
+    secure_action:        secure
