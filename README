@@ -1,0 +1,12 @@
+production environment:
+  - change all/.settings/csrf_secret in apps/frontend/config/settings.yml 
+
+additional packages installed on Ubuntu 10.10:
+  php-apc
+  php5-sqlite
+  php5-cli
+  sqlite3
+
+Install:
+  creating model:
+    ./model
