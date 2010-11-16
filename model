@@ -1,4 +1,10 @@
 #!/bin/sh
+if [ ! -d data/database ]
+then
+	mkdir -p data/database
+fi
+echo "set rights"
+chmod a+w data/database
 echo "doctrine:build-model"
 php symfony doctrine:build-model
 echo "doctrine:build-sql"
@@ -9,6 +15,4 @@ echo "doctrine:data-load"
 php symfony doctrine:data-load
 echo "clear-cache"
 php symfony cc
-echo "set rights"
-chmod a+w data/database/webschach.db
-chmod a+w data/database
+chmod a+w data/database/webschachdb.db

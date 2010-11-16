@@ -2,3 +2,5 @@
 log
 cache
 data/database
+lib/model/doctrine/base/
+lib/model/doctrine/sfDoctrineGuardPlugin/base/

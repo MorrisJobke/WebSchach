@@ -1,4 +1,4 @@
-games:
+Games:
   actAs:              [Timestampable]
   columns:
     id:               { type: integer, primary: true, autoincrement: true }
