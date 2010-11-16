@@ -1,0 +1,15 @@
+sfGuardUser:
+  kabum:
+    username:         kabum
+    password:         abc
+    is_super_admin:   true
+    email_address:    uu.kabum@gmail.com
+    first_name:       Hans
+    last_name:        Peter
+  kabum2:
+    username:         kabum2
+    password:         abc
+    is_super_admin:   false
+    email_address:    uu.kabum2@gmail.com
+    first_name:       Hans
+    last_name:        Peter

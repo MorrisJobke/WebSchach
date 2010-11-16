@@ -1,0 +1,41 @@
+games:
+  actAs:              [Timestampable]
+  columns:
+    id:               { type: integer, primary: true, autoincrement: true }
+    white_id:         { type: integer, notnull: true }
+    black_id:         { type: integer, notnull: true }
+  relations:
+    sfGuardUser:
+      local:          white_id
+      foreign:        id
+      type:           one
+      foreignType:    many
+    sfGuardUser:
+      local:          black_id
+      foreign:        id
+      type:           one
+      foreignType:    many
+
+#    live:                 { type: boolean, default: true }
+#    training:             { type: boolean, default: false }
+#    accepted:             { type: boolean, default: false }
+#    destination_id:       { type: integer, required: true }
+#    finished:             { type: boolean, default: false }
+#    winner_id:            { type: integer, default: 0 }
+#    winning_reason:       { type: tinyint, default: 0 }
+#    chessclock:           { type: tinyint, default: 0 }
+#    last_move_at:         { type: timestamp, default: '0000-00-00 00:00:00' }
+#    accepted_at:          { type: timestamp, default: '0000-00-00 00:00:00' }
+#    finished_at:          { type: timestamp, default: '0000-00-00 00:00:00' }
+#    white_remis_at:       { type: timestamp, default: '0000-00-00 00:00:00' }
+#    black_remis_at:       { type: timestamp, default: '0000-00-00 00:00:00' }
+#    hidden_white:         { type: boolean, default: false }
+#    hidden_black:         { type: boolean, default: false }
+#    undo_draw_white:      { type: integer, default: 0 }
+#    undo_draw_black:      { type: integer, default: 0 }
+#    undo_draw_w:          { type: boolean, default: false }
+#    undo_draw_b:          { type: boolean, default: false }
+#    white_start:          { type: boolean, default: false }
+#    black_start:          { type: boolean, default: false }
+#    white_chat:           { type: boolean, default: true }
+#    black_chat:           { type: boolean, default: true }
